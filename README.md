@@ -30,7 +30,7 @@ The engine employs a deep semantic recommendation pipeline built on a static dat
 │   └── .env.example        # Environment configuration template
 ├── data/
 │   ├── top50k_movies.csv   # Unified movie dataset (49,503 rows)
-│   └── data_cleaning.ipynb # Blank notebook for historical data wrangling
+│   └── data_cleaning.ipynb # Dataset cleaning pipeline: kagglehub download, filtering, and export to top50k_movies.csv
 ├── frontend/
 │   ├── src/
 │   │   ├── components/

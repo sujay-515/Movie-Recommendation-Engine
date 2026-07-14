@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  
+  /* Spec-compliant color system */
+  --bg-base: #15130F;
+  --surface-1: #1C1914;
+  --surface-2: #25211B;
+  --border-divider: #332D25;
+  
+  --text-primary: #FAFAF8;
+  --text-secondary: rgba(250, 250, 248, 0.7);
+  --text-muted: rgba(250, 250, 248, 0.45);
+  
+  --accent-primary: #E8A33D;
+  --accent-hover: #F5B841;
+  
+  --match-badge: #4ADE80;
+  --rating-high: #E8A33D;
+  --rating-mid: #E8A33D;
+  --rating-low: #E8A33D;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #15130F 0%, #0E0D0A 100%);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar matching dark elevation */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-divider);
+  border-radius: 9999px;
+  border: 2px solid var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

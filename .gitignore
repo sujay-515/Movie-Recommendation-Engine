@@ -1,0 +1,25 @@
+# Python virtual env and cache
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local environment secrets (NEVER commit your TMDB_API_KEY to Git!)
+backend/.env
+.env
+.env*.local
+
+# Node / Frontend builds
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# OS files
+.DS_Store
+Thumps.db
+
+# Generated ML/Embedding files (do not commit to Git)
+backend/movie_embeddings.npy
+backend/movie_index.pkl
+cs50p/
